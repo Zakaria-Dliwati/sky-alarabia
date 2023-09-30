@@ -8,19 +8,24 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="css/main.css"> -->
   <link rel="stylesheet" href="css/main2.css">
-  <title>Document</title>
+  <title>Sky Alarabia</title>
 </head>
 
 <body>
   <div class="video-container">
-    <video autoplay muted loop id="video-background">
+    <!-- <video autoplay muted loop id="video-background">
       <source src="images/VID-20230925-WA0028-edited.mp4" type="video/mp4">
-    </video>
+    </video> -->
 
     <div id="header">
       <div class="container">
         <nav>
-          <a href="index.html"><img src="images/logo-white.png" alt="" class="logo"></a>
+          <div></div>
+          <div class="spacer-1"></div>
+          <div class="spacer-2"></div>
+          <div class="spacer-3"></div>
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+          <a class="logo-website" href="index.html"><img src="images/logo-white.png" alt="" class="logo"></a>
           <div class="holder">
             <ul id="sidemenu">
               <li><a class="active" href="#header">Home</a></li>
@@ -40,17 +45,17 @@
     <div class="header-text ">
       <div class="container">
         <h1>Sky Alarabia Real Estate Company</h1>
-        <h3>Walking steadiy towards the summit in the real estate development industry in accordance with the Kingdom's
-          vision 2023 </h3>
+        <h2>Walking steadily towards the summit in the real estate development industry in accordance with the Kingdom's
+          vision 2023 </h2>
       </div>
     </div>
   </div>
 
   <!-- ----------------------cards--------------------- -->
   <div class="cards">
-    
+    <div class="elementor-background-overlay"></div>
       <div class="card-product">
-        <img src="images/IMG-20230925-WA0031.jpg" alt="">
+        <img src="images/king-a.png" alt="">
         <div class="card-text">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit inventore fugit molestias quo sit qui
             quas fuga. Commodi aperiam, laboriosam, porro eaque nihil maxime magnam, magni tempora vero numquam ipsum.
@@ -59,16 +64,20 @@
         </div>
       </div>
       <div class="card-product">
-        <img src="images/IMG-20230925-WA0031.jpg" alt="">
         <div class="card-text">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit inventore fugit molestias quo sit qui
             quas fuga. Commodi aperiam, laboriosam, porro eaque nihil maxime magnam, magni tempora vero numquam ipsum.
           </p>
           <div class="slogan"><img src="images/king.png" alt=""></div>
         </div>
+        <img src="images/king-s.jpg" alt="">
       </div>
     
   </div>
+
+
+
+  
   <script>
     let sidemenu = document.getElementById('sidemenu');
     function openmenu() {
@@ -83,11 +92,11 @@
     logo.src = "images/logo.png";
     logo.width = 140;
     let wLogo = document.querySelector('.logo');
-    let nav = document.querySelector('nav');
+    let nav = document.querySelector('.logo-website');
     const selectHeader = document.querySelector('#header');
     if (selectHeader) {
       document.addEventListener('scroll', () => {
-        if (window.scrollY > 10) {
+        if (window.scrollY > 0) {
           selectHeader.classList.add('sticked');
           wLogo.remove();
           nav.prepend(logo);
