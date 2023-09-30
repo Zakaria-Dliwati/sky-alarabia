@@ -7,6 +7,7 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
 html,
 body,
 h1,
@@ -87,11 +88,12 @@ nav ul li a.active {
   color: #fff;
 }
 
-@media(max-width:1200px){
-nav {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.95);
+@media(max-width:1200px) {
+  nav {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.95);
+  }
 }
-}
+
 nav ul li a::after {
   content: '';
   width: 0;
@@ -192,7 +194,7 @@ nav ul li a:hover {
 .header-text {
   position: absolute;
   top: 25vh;
-  
+
   font-weight: bolder;
   padding: 6rem;
   /* text-align: center; */
@@ -211,9 +213,7 @@ nav ul li a:hover {
 }
 
 /* ---------------cards------------------ */
-.cards .container {
-  
-}
+.cards .container {}
 
 .cards .card-product {
   /* display: flex; */
@@ -227,14 +227,14 @@ nav ul li a:hover {
   /* width: 100%; */
   padding: 4rem;
   margin-top: 70px;
-    margin-bottom: 70px;
-    /* padding: 0px 20px 0px 20px; */
-    /* flex-wrap: wrap; */
+  margin-bottom: 70px;
+  /* padding: 0px 20px 0px 20px; */
+  /* flex-wrap: wrap; */
 }
 
 .cards .card-product:nth-child(2n+1) {
   background: rgba(5, 50, 128, 0.5);
-  
+
 }
 
 .cards .slogan img {
@@ -249,11 +249,11 @@ nav ul li a:hover {
 }
 
 
-.cards{
+.cards {
   position: relative;
 }
 
-.elementor-background-overlay{
+.elementor-background-overlay {
   background-image: url(../images/logo-diagonal.png);
   background-position: bottom right;
   background-repeat: repeat;
@@ -267,6 +267,7 @@ nav ul li a:hover {
   position: absolute;
   z-index: -1;
 }
+
 .cards .card-text {
   display: flex;
   flex-direction: column;
@@ -275,9 +276,10 @@ nav ul li a:hover {
   text-align: center;
   /* margin: auto; */
   align-self: center;
-    justify-self: center;
-    padding: 20px;
+  justify-self: center;
+  padding: 20px;
 }
+
 .cards .card-product>img {
   max-width: 40vw;
   /* height: 300px; */
@@ -287,37 +289,49 @@ nav ul li a:hover {
   align-self: center;
   justify-self: center;
 }
-@media(min-width:1200px){
+
+@media(min-width:1200px) {
+
   .spacer-0,
   .spacer-1,
   .spacer-2,
-  .spacer-3{
+  .spacer-3 {
     display: none;
   }
 }
+
 @media(max-width:1000px) {
   .spacer-1 {
     display: none;
   }
-.cards .card-product{
-  grid-template-columns: 1fr;
-}
-  .cards .card-product>img {
-   
-   max-width: 500px;
-    
+
+  .cards .card-product {
+    grid-template-columns: 1fr;
   }
-.cards .card-text{
-  max-width: 80vw;
-  
-}
-    .cards .card-text p {
-      width: 70vw;
-      
-    }
+
+  .cards .card-product>img {
+
+    max-width: 500px;
+
+  }
+
+  .cards .card-text {
+    max-width: 80vw;
+
+  }
+
+  .cards .card-text p {
+    width: 70vw;
+
+  }
 }
 
 @media(max-width:800px) {
+  .header-text {
+    padding: 2rem;
+    top: 15vh;
+  }
+
   .spacer-2 {
     display: none;
   }
@@ -337,18 +351,20 @@ nav ul li a:hover {
 }
 
 @media(max-width:550px) {
-  .cards .card-text p{
+  .cards .card-text p {
     width: 90%;
     margin: auto;
   }
-.cards .card-product{
-  width: auto;
-  padding: 20px;
-  margin: auto;
-}
+
+  .cards .card-product {
+    width: auto;
+    padding: 20px;
+    margin: auto;
+  }
+
   .cards .card-product>img {
     width: 300px;
-    height: auto; 
+    height: auto;
     padding: 0;
   }
 
@@ -358,17 +374,16 @@ nav ul li a:hover {
 
   }
 
-  .cards .card-product {
-    
+  .cards .card-product {}
+
+  .cards .slogan {
+    /* text-align: center; */
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* left: -20px; */
   }
-    .cards .slogan {
-      /* text-align: center; */
-      width:250px;
-      padding: 0;
-      margin: 0;
-      position: relative;
-      /* left: -20px; */
-    }
 }
 
 @media(max-width:360px) {
@@ -377,36 +392,38 @@ nav ul li a:hover {
     width: 250px;
     /* height: 150px; */
   }
-.cards .card-product {
-  /* width: 250px; */
-}
 
-    .cards .card-product>img {
-      width: 220px;}
+  .cards .card-product {
+    /* width: 250px; */
+  }
 
-            .cards .card-text {
-              
-              width: 180px;
-      
-            }
-                        .cards .slogan {
-                          width: 150px;
-                        }
-}
-@media(max-width:270px){
   .cards .card-product>img {
-      width: 180px;
-    }
-        .cards .card-text {
-    
-          width: 120px;
-    
-        }
-                .cards .slogan img {
-                  width: 100px;
-                }
+    width: 220px;
+  }
+
+  .cards .card-text {
+
+    width: 180px;
+
+  }
+
+  .cards .slogan {
+    width: 150px;
+  }
 }
 
+@media(max-width:270px) {
+  .cards .card-product>img {
+    width: 180px;
+  }
 
+  .cards .card-text {
 
+    width: 120px;
 
+  }
+
+  .cards .slogan img {
+    width: 100px;
+  }
+}
